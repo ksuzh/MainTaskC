@@ -1,4 +1,4 @@
-﻿string[] CreateStringAndFillArray(int size)
+﻿string[] CreateAndFillStringArray(int size)
 {
     string[] elements = new string[size];
 
@@ -11,3 +11,14 @@
     return elements;
 }
 
+string PrintArray(string[] array)
+{
+    string showArray = String.Empty;
+    for (int i = 0; i < array.Length; i++)
+        showArray += array[i] + " ";
+    return showArray;
+}
+
+string[] myArray = CreateAndFillStringArray(5);
+
+Console.WriteLine(PrintArray(myArray));
