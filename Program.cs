@@ -4,7 +4,7 @@
 
     for (int i = 0; i < size; i++)
     {
-        Console.Write($"Input {i +1} word: ");
+        Console.Write($"Input {i +1} element: ");
         elements[i] = Console.ReadLine();
     }
 
